@@ -1,24 +1,86 @@
 aid: lap-coffee
 name: LAP Coffee
-description: 'LAP Coffee is a company surfaced as a portfolio company of hv-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'LAP Coffee (Life Among People) is a Berlin-founded specialty coffee retail chain operated by
+  Micro Retail Technologies MRT GmbH. It opened its first store in Berlin Mitte in August 2023 and has grown
+  to a network of neighbourhood cafes across Berlin, with further locations and openings in Cologne, Frankfurt,
+  Munich and Hamburg. LAP serves locally roasted specialty coffee at everyday prices from small, high-throughput
+  stores, and runs a consumer mobile app (LAP: Everyday Coffee) for pre-ordering, in-store pickup, a stamps and
+  rewards loyalty program, gifting and referrals, replacing an earlier Apple/Google Wallet stamp pass. LAP is
+  backed by HV Capital. As of this enrichment pass LAP publishes no public developer program, API, SDK or
+  developer documentation; its technology surface is the consumer app, the order.lap.coffee deep-link service
+  and a Webflow marketing site.'
+type: Index
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/6486f424f96e22d43c4d3612/678d004bf7f2025c6ec5e0ac_LAP%20Coffee%20Dynamic%2019.jpg
 url: https://raw.githubusercontent.com/api-evangelist/lap-coffee/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - hv-capital
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Coffee
+- Retail
+- Food and Beverage
+- Hospitality
+- Loyalty
+- Mobile Applications
+- Germany
 apis: []
+common:
+- type: DomainSecurity
+  url: security/lap-coffee-domain-security.yml
+- type: Website
+  url: https://www.lap.coffee/
+- type: Support
+  url: https://www.lap.coffee/contact
+- type: HelpCenter
+  url: https://www.lap.coffee/app-faq
+- type: TermsOfService
+  url: https://www.lap.coffee/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.lap.coffee/privacy-policy
+- type: Imprint
+  url: https://www.lap.coffee/imprint
+- type: Careers
+  url: https://jobs.ashbyhq.com/lap
+- type: MobileApplication
+  url: https://apps.apple.com/de/app/lap-everyday-coffee/id6761849725
+- type: Menu
+  url: https://www.lap.coffee/menu
+- type: Sustainability
+  url: https://www.lap.coffee/sustainability
+- type: Instagram
+  url: https://www.instagram.com/lapcoffee_/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/lap-coffee/
+- type: TikTok
+  url: https://www.tiktok.com/@lap.coffee
+- type: LLMsTxt
+  url: llms/lap-coffee-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

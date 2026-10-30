@@ -64,35 +64,90 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-LAP Coffee ("Life Among People") is a Berlin-founded specialty coffee retail chain operated by
-Micro Retail Technologies MRT GmbH. It opened its first store in Berlin Mitte in August 2023 and
-now runs a network of small, high-throughput neighbourhood cafes across Berlin, with locations and
-openings in Cologne, Frankfurt, Munich and Hamburg. LAP serves locally roasted specialty coffee at
-everyday prices and runs a consumer mobile app (LAP: Everyday Coffee) for pre-ordering, in-store
-pickup, stamps and rewards, gifting and referrals.
+LAP Coffee (Life Among People) is a Berlin-founded specialty coffee retail chain operated by Micro Retail Technologies MRT GmbH. It opened its first store in Berlin Mitte in August 2023 and has grown to a network of neighbourhood cafes across Berlin, with further locations and openings in Cologne, Frankfurt, Munich and Hamburg. LAP serves locally roasted specialty coffee at everyday prices from small, high-throughput stores, and runs a consumer mobile app (LAP: Everyday Coffee) for pre-ordering, in-store pickup, a stamps and rewards loyalty program, gifting and referrals, replacing an earlier Apple/Google Wallet stamp pass. LAP is backed by HV Capital. As of this enrichment pass LAP publishes no public developer program, API, SDK or developer documentation; its technology surface is the consumer app, the order.lap.coffee deep-link service and a Webflow marketing site.
 
-Backed by: hv-capital
+**Areas:** Company · Consumer · Coffee · Retail · Food and Beverage · Hospitality · Loyalty · Mobile App · Germany
 
-## API surface
+## LAP Coffee on APIs.io
 
-**None.** As of the 2026-07-19 enrichment pass LAP Coffee publishes no public API, developer portal,
-API reference, SDK, CLI, MCP server or OpenAPI. Verified negatives:
+Everything profiled for LAP Coffee is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lap-coffee/](https://apis.io/providers/lap-coffee/)** — or go straight to one of the APIs or properties below.
 
-- No `/.well-known/` discovery documents on `www.lap.coffee` or `order.lap.coffee` (all 404) —
-  see [`well-known/lap-coffee-well-known.yml`](well-known/lap-coffee-well-known.yml).
-- No `/llms.txt`, no `/openapi.json`.
-- No GitHub organization (`lapcoffee`, `lap-coffee` both 404).
-- No first-party packages on npm or PyPI.
-- No published vulnerability-disclosure program or trust center.
+### Published properties
 
-`order.lap.coffee/<code>` is a per-store deep-link/attribution service that 302s to the App Store
-listing — it is not an API.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Artifacts
+#### MCP servers (1)
 
-| Artifact | File | Method |
-|---|---|---|
-| Profile | [`apis.yml`](apis.yml) | searched |
-| Domain security | [`security/lap-coffee-domain-security.yml`](security/lap-coffee-domain-security.yml) | probed |
-| Well-known probe | [`well-known/lap-coffee-well-known.yml`](well-known/lap-coffee-well-known.yml) | probed |
-| llms.txt | [`llms/lap-coffee-llms.txt`](llms/lap-coffee-llms.txt) | generated |
+Model Context Protocol servers that expose the API to agents.
+
+- [lap-coffee](https://apis.io/servers/lap-coffee/lap-coffee/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Lap Coffee Domain Security](https://apis.io/security/lap-coffee/lap-coffee-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.lap.coffee/)
+- [Support](https://www.lap.coffee/contact)
+- [Terms of service](https://www.lap.coffee/terms-and-conditions)
+- [Privacy policy](https://www.lap.coffee/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 10.8** — minimal · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 58.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 21.1 |
+
+**Agent readiness 12.2** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/lap-coffee/](https://apis.io/providers/lap-coffee/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for LAP Coffee: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lap-coffee/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
